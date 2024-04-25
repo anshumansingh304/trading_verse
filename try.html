@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trading verse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://academy-public.coinmarketcap.com/optimized-uploads/edf299f30f434f10a59eb7f5822ce77c.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/887c404c0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://www.tradingview.com/"
+          rel="noopener nofollow"
+          target="_blank"
+        ></a>
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+        {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500 Index"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100 Cash CFD"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR to USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            }
+          ],
+          "showSymbolLogo": true,
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "colorTheme": "white",
+          "locale": "en"
+        }
+      </script>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <img
+        src="https://t3.ftcdn.net/jpg/01/36/20/40/360_F_136204027_JgHaab2r1wqenjQd6m1PNDJ6J9PM8tvH.jpg"
+        alt="Logo"
+        width="130"
+        height="64"
+        class="logo-inline-block align-text-center mr-2"
+      />
+      <span style="font-weight: bolder">Trading verse</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href=""
+              ><i class="fa-solid fa-satellite-dish"></i> Community</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-table"></i> Report</a
+            >
+          </li>
+          <li class="nav-item margin-left-20px">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-handshake-simple-slash"></i> Brokers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="container-fluid"
+              ><i class="fa-solid fa-newspaper"></i> News</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://api.whatsapp.com/send?phone=919450516403"
+              ><i class="fa-regular fa-address-book"></i> Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>
+          In this business, if you’re good, you’re right six times out of ten.
+          You’re never going to be right nine times out of ten
+        </p>
+      </blockquote>
+      <figcaption class="blockquote-footer">Peter Lynch-</figcaption>
+    </figure>
+    <br />
+    <div class="content">Expected volatility</div>
+    <br />
+    <div class="market">
+      <select>
+        <option><a class="nav-link" href="">Indian</a></option>
+        <a class="nav-link" href="">Tata Motors</a>
+        <option><a class="nav-link" href="">HUL</a></option>
+      </select>
+      <select>
+        <option>
+          <a
+            class="nav-link"
+            href="https://chat.openai.com/c/ab1cd8b2-6417-4a97-bfcf-df99a90551cf"
+            >Forex</a
+          >
+        </option>
+        <option id="eurusd-btn">EUR/USD</option>
+        <option><a class="nav-link" href="">GBP/USD</a></option>
+      </select>
+      <select>
+        <option>Crypto</option>
+        <option>BTC/USD</option>
+        <option>SOL/USD</option>
+      </select>
+      <select>
+        <option><a class="nav-link" href="">Commodity</a></option>
+        <option><a class="nav-link" href="">XAU/USD</a></option>
+        <option><a class="nav-link" href="">CL/USD</a></option>
+      </select>
+    </div>
+    <br />
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://www.tradingview.com/"
+          rel="noopener nofollow"
+          target="_blank"
+        ></a>
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+        async
+      >
+        {
+          "width": "100%",
+          "height": "570",
+          "symbol": "BTC",
+          "interval": "D",
+          "timezone": "Etc/UTC",
+          "theme": "light",
+          "style": "1",
+          "locale": "en",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "calendar": false,
+          "support_host": "https://www.tradingview.com"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <br />
+    <div class="content">Insights</div>
+    <br />
+    <div id="container-fluid">
+      <div class="report">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a
+              href="https://www.tradingview.com/"
+              rel="noopener nofollow"
+              target="_blank"
+            ></a>
+          </div>
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+            async
+          >
+            {
+              "isTransparent": true,
+              "width": 60%,
+              "height": 490,
+              "defaultColumn": "overview",
+              "screener_type": "crypto_mkt",
+              "displayCurrency": "USD",
+              "colorTheme": "light",
+              "locale": "en"
+            }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
+      <div class="News">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a
+              href="https://www.tradingview.com/"
+              rel="noopener nofollow"
+              target="_blank"
+            ></a>
+          </div>
+          <script
+            type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+            async
+          >
+            {
+              "feedMode": "all_symbols",
+              "isTransparent": true,
+              "displayMode": "regular",
+              "width": 400,
+              "height": 520,
+              "colorTheme": "light",
+              "locale": "en"
+            }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
+    </div>
+    <br />
+    <div class="content">Recommendation</div>
+    <br />
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Symbol</th>
+          <th scope="col">BUY</th>
+          <th scope="col">SELL</th>
+          <th scope="col">STOP LOSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>BTC/USD</td>
+          <td>35k</td>
+          <td>65k</td>
+          <td>32k</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>HDFC</td>
+          <td>1115</td>
+          <td>1205</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>ADANI POWER</td>
+          <td>249</td>
+          <td>325</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+<section>
+	<div class="customer-feedback">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8">
+					<div>
+						<h2 class="section-title">What Clients Say</h2>
+					</div>
+				</div><!-- /End col -->
+			</div><!-- /End row -->
+
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+					<div class="feedback-slider">
+
+						<!-- slider item -->
+						<div class="feedback-slider-item">
+							<img src="//c2.staticflickr.com/8/7310/buddyicons/24846422@N06_r.jpg" class="center-block img-circle" alt="Customer Feedback">
+							<h3 class="customer-name">Lisa Redfern</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+							<span class="light-bg customer-rating" data-rating="5">
+								5
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<!-- /slider item -->
+<div class="popover__wrapper">
+  <a href="#" style="text-decoration: none;">
+    <h2 class="popover__title" style="color: white;">Baja Finserve </h2>
+  </a>
+  <div class="popover__content">
+    <p class="popover__message"><a href="https://in.tradingview.com/chart/JKfbeepS/?symbol=NSENG%3AUNILEVER" style="text-decoration: none; color: white; font-weight: bold;background-color: rgb(42, 41, 40); border-radius: 5px;">&nbsp;  Chart &nbsp;</a></p>
+    <img alt="Joseph Francis Joey Tribbiani, Jr." src="fin.png" width="600%">
+  </di
+						<!-- slider item -->
+						<div class="feedback-slider-item">
+							<img src="https://res.cloudinary.com/hnmqik4yn/image/upload/c_fill,fl_force_strip,h_128,q_100,w_128/v1493982718/ah57hnfnwxkmsciwivve.jpg" class="center-block img-circle" alt="Customer Feedback">
+							<h3 class="customer-name">Cassi</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+							<span class="light-bg customer-rating" data-rating="4">
+								4
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<!-- /slider item -->
+
+						<!-- slider item -->
+						<div class="feedback-slider-item">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg" class="center-block img-circle" alt="Customer Feedback">
+							<h3 class="customer-name">Md Nahidul</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+							<span class="light-bg customer-rating" data-rating="5">
+								5
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+						<!-- /slider item -->
+						
+					</div><!-- /End feedback-slider -->
+
+					<!-- side thumbnail -->
+					<div class="feedback-slider-thumb hidden-xs">
+						<div class="thumb-prev">
+							<span>
+								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/451270/profile/profile-80.jpg" alt="Customer Feedback">
+							</span>
+							<span class="light-bg customer-rating">
+								5
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+
+						<div class="thumb-next">
+							<span>
+								<img src="https://res.cloudinary.com/hnmqik4yn/image/upload/c_fill,fl_force_strip,h_128,q_100,w_128/v1493982718/ah57hnfnwxkmsciwivve.jpg" alt="Customer Feedback">
+							</span>
+							<span class="light-bg customer-rating">
+								4
+								<i class="fa fa-star"></i>
+							</span>
+						</div>
+					</div>
+					<!-- /side thumbnail -->
+
+				</div><!-- /End col -->
+			</div><!-- /End row -->
+		</div><!-- /End container -->
+	</div><!-- /End customer-feedback -->
+</section>
+
+    <div class="brokers">Brokers</div>
+    <br />
+    <br />
+    <div id="Brokers">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://i.pinimg.com/736x/ee/8c/84/ee8c841bf6f102e52366cbe66ff21f3a.jpg"
+          height="100px"
+          width="200px"
+          ="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <hr />
+          <h5 class="card-title">EXNESS</h5>
+          <p class="card-text">
+            At EXNESS our number one priority has been to make investing
+            accessible and transparent for millions of people across the
+            country.
+          </p>
+          <a
+            href="https://my.exness.com/pa/settings/vps?origin=settings"
+            class="btn btn-primary"
+            >EXNESS</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://logosandtypes.com/wp-content/uploads/2022/08/upstox.svg"
+          height="100px"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <hr />
+          <h5 class="card-title">UPSTOX</h5>
+          <p class="card-text">
+            Earn over ₹ 1 lakh/month with Upstox and earn incentives and
+            brokerage when you onboard a customer.
+          </p>
+          <a
+            href="https://link.upstox.com/MGdZXagdVtRbMpUC6"
+            class="btn btn-primary"
+            >UPSTOX</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://play-lh.googleusercontent.com/wnNYBAH1m-XJMfduOHfEATQAhCwyKUYeHAD1Fi9-OjtxKyPKjFEmgWvbx-OX2dM65xjp"
+          height="100px"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <hr />
+          <h5 class="card-title">KITE by ZERODHA</h5>
+          <p class="card-text">
+            Refer your friends to earn 10% of the brokerage they pay! Also get
+            300 reward points for each referral. Withdraw the 10%.
+          </p>
+          <a href="#" class="btn btn-primary">KITE</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://static.theprint.in/wp-content/uploads/2023/08/ANI-20230824101609.jpg"
+          height="100px"
+          width="50px"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <hr />
+          <h5 class="card-title">OCTA-FX</h5>
+          <p class="card-text">
+            Take advantage of our Invite-a-Friend program and get our premium
+            services for free for one month
+          </p>
+          <a href="#" class="btn btn-primary">OCTA-FX</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Adding click event listener to EUR/USD button
+        var eurUsdButton = document.getElementById("eurusd-btn");
+        eurUsdButton.addEventListener("click", function () {
+          window.location.href =
+            "https://www.tradingview.com/chart/JKfbeepS/?symbol=FX%3AEURUSD";
+        });
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+        });
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
